@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-05 22:49:09</p>
+                <p class='attribute'><strong>Duration: </strong>301.20 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.HtmlreportsTc1</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: timeout: Timed out receiving message from renderer: 265.696
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0119DF13+2219795]
+	Ordinal0 [0x01132841+1779777]
+	Ordinal0 [0x0104423D+803389]
+	Ordinal0 [0x01037163+749923]
+	Ordinal0 [0x01035F94+745364]
+	Ordinal0 [0x01036528+746792]
+	Ordinal0 [0x0103F42F+783407]
+	Ordinal0 [0x0104A695+829077]
+	Ordinal0 [0x0104DA60+842336]
+	Ordinal0 [0x010367F6+747510]
+	Ordinal0 [0x0104A4A9+828585]
+	Ordinal0 [0x0109F521+1176865]
+	Ordinal0 [0x0108E616+1107478]
+	Ordinal0 [0x01067F89+950153]
+	Ordinal0 [0x01068F56+954198]
+	GetHandleVerifier [0x01492CB2+3040210]
+	GetHandleVerifier [0x01482BB4+2974420]
+	GetHandleVerifier [0x01236A0A+565546]
+	GetHandleVerifier [0x01235680+560544]
+	Ordinal0 [0x01139A5C+1808988]
+	Ordinal0 [0x0113E3A8+1827752]
+	Ordinal0 [0x0113E495+1827989]
+	Ordinal0 [0x011480A4+1867940]
+	BaseThreadInitThunk [0x751C7BA9+25]
+	RtlInitializeExceptionChain [0x7708BB3B+107]
+	RtlClearBits [0x7708BABF+191]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\ELITEBOOK\PycharmProjects\Musala_Test\htmlreports_TC_1.py", line 11, in setUp
+    self.driver.get("http://www.musala.com/")
+  File "C:\Users\ELITEBOOK\PycharmProjects\Musala_Test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\ELITEBOOK\PycharmProjects\Musala_Test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ELITEBOOK\PycharmProjects\Musala_Test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 265.696
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0119DF13+2219795]
+	Ordinal0 [0x01132841+1779777]
+	Ordinal0 [0x0104423D+803389]
+	Ordinal0 [0x01037163+749923]
+	Ordinal0 [0x01035F94+745364]
+	Ordinal0 [0x01036528+746792]
+	Ordinal0 [0x0103F42F+783407]
+	Ordinal0 [0x0104A695+829077]
+	Ordinal0 [0x0104DA60+842336]
+	Ordinal0 [0x010367F6+747510]
+	Ordinal0 [0x0104A4A9+828585]
+	Ordinal0 [0x0109F521+1176865]
+	Ordinal0 [0x0108E616+1107478]
+	Ordinal0 [0x01067F89+950153]
+	Ordinal0 [0x01068F56+954198]
+	GetHandleVerifier [0x01492CB2+3040210]
+	GetHandleVerifier [0x01482BB4+2974420]
+	GetHandleVerifier [0x01236A0A+565546]
+	GetHandleVerifier [0x01235680+560544]
+	Ordinal0 [0x01139A5C+1808988]
+	Ordinal0 [0x0113E3A8+1827752]
+	Ordinal0 [0x0113E495+1827989]
+	Ordinal0 [0x011480A4+1867940]
+	BaseThreadInitThunk [0x751C7BA9+25]
+	RtlInitializeExceptionChain [0x7708BB3B+107]
+	RtlClearBits [0x7708BABF+191]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 301.20 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
